@@ -1,6 +1,22 @@
 @use "bootstrap/scss/bootstrap" as *;
 
-header {
+header,
+footer {
     height: 100px;
     background-color: rgb(255, 84, 21);
+}
+
+nav {
+    border: solid black 2px;
+}
+
+.content {
+    background-image: url('https://wallpapercave.com/wp/wp7547251.jpg');
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card img {
+    max-height: 350px;
 }
