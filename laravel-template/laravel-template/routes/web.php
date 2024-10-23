@@ -26,33 +26,51 @@ Route::get('/', function () {
     $allPokemon = config('db.allPokemon');
 
 
-
-
     return view('pages.page', ['allPokemon' => $allPokemon]);
 })->name('/');
 
-Route::get('/page2', function () {
+//Grass pokemon
+Route::get('/grass', function () {
 
     $allPokemon = config('db.allPokemon');
 
+    $grassPokemon = array_filter($allPokemon, function ($singlePokemon) {
+        return $singlePokemon['typing'] == 'Grass Starter';
+    });
 
-    return view('pages.grass', ['allPokemon' => $allPokemon]);
+
+    return view('pages.grass', ['allPokemon' => $grassPokemon]);
 })->name('grass');
 
+
+//Fire pokemon
 Route::get('/fire', function () {
 
     $allPokemon = config('db.allPokemon');
 
+    $allPokemon = config('db.allPokemon');
 
-    return view('pages.fire', ['allPokemon' => $allPokemon]);
+    $firePokemon = array_filter($allPokemon, function ($singlePokemon) {
+        return $singlePokemon['typing'] == 'Fire Starter';
+    });
+
+    return view('pages.fire', ['allPokemon' => $firePokemon]);
 })->name('fire');
+
+//Water pokemon
 
 Route::get('/water', function () {
 
     $allPokemon = config('db.allPokemon');
 
+    $allPokemon = config('db.allPokemon');
 
-    return view('pages.water', ['allPokemon' => $allPokemon]);
+    $waterPokemon = array_filter($allPokemon, function ($singlePokemon) {
+        return $singlePokemon['typing'] == 'Water Starter';
+    });
+
+
+    return view('pages.water', ['allPokemon' => $waterPokemon]);
 })->name('water');
 
 //Creating a Show
