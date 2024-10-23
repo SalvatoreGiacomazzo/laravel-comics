@@ -1,27 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-
-
-Route::get('/layout', function () {
-    return view('pages.layout');
-});
-
-
-Route::get('/', function () {
-    $firstStage = [
+return [
+    'allPokemon' => [
 
         [
             'name' =>  'Bulbasaur',
@@ -114,18 +94,7 @@ Route::get('/', function () {
             'typing' =>  'Water',
             'region' =>   'Unima',
             'imgUrl' => 'https://img.pokemondb.net/artwork/large/oshawott.jpg'
-        ]
-
-    ];
-
-
-    return view('pages.page', ['firstStage' => $firstStage]);
-})->name('/');
-
-Route::get('/page2', function () {
-
-    $secondStage = [
-
+        ],
         [
             'name' =>  'Ivysaur',
             'typing' =>  'Grass/Poison',
@@ -217,18 +186,7 @@ Route::get('/page2', function () {
             'typing' =>  'Water',
             'region' =>   'Unima',
             'imgUrl' => 'https://img.pokemondb.net/artwork/large/dewott.jpg'
-        ]
-
-    ];
-
-
-
-    return view('pages.page2', ['secondStage' => $secondStage]);
-})->name('page2');
-
-Route::get('/page3', function () {
-
-    $thirdStage = [
+        ],
         [
             'name' => 'Venusaur',
             'typing' => 'Grass/Poison',
@@ -319,11 +277,6 @@ Route::get('/page3', function () {
             'region' => 'Unima',
             'imgUrl' => 'https://img.pokemondb.net/artwork/large/samurott.jpg'
         ]
-    ];
 
-
-    return view('pages.page3', ['thirdStage' => $thirdStage]);
-})->name('page3');
-
-
-//Creating a Show
+    ]
+];
