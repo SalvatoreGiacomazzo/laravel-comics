@@ -9,19 +9,18 @@
 
             <div class="col-6 mb-5">
                 <div class="card">
-                    <img class="card-img-top" src="..." alt="Pokemon">
+                    <img class="card-img-top" src="{{$singlePokemon['imgUrl']}}" alt="Pokemon">
                     <div class="card-body">
-                        <h5 class="card-title">aaa</h5>
-                        <p class="card-text">aaa</p>
-                        <small class="card-text">aa</small>
+                        <h5 class="card-title">{{$singlePokemon['name']}}</h5>
+                        <p class="card-text">{{$singlePokemon['typing']}}</p>
+                        <small class="card-text">{{$singlePokemon['region']}}</small>
                         <div>
                         <button type="button" class="btn btn-success ml-5"><a href="{{route('/')}}">Go Back</a></button>
                         </div>
                     </div>
                 </div>
+
             </div>
-
-
     </div>
 </div>
 

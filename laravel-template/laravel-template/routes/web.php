@@ -75,9 +75,14 @@ Route::get('/water', function () {
 
 //Creating a Show
 
-Route::get('/show', function () {
+Route::get('/show/{index}', function (string $index) {
 
-    $allPokemon = config('db');
+    $allPokemon = config('db.allPokemon');
+    if (isset($allPokemon[$index])) {
 
-    return view('pages.show', ['allPokemon' => $allPokemon]);
+        $singlePokemon = $allPokemon[$index];
+    } else {
+        abort(404, 'No Pokémon was found!');
+    }
+    return view('pages.show', compact("singlePokemon"));
 })->name('show');
