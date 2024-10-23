@@ -13,7 +13,9 @@
                         <h5 class="card-title">{{$thirdStagePokemon['name']}}</h5>
                         <p class="card-text">{{$thirdStagePokemon['typing']}}</p>
                         <small class="card-text">{{$thirdStagePokemon['region']}}</small>
-                        <button type="button" class="btn btn-success"><a href="{{route('show')}}">Show</a></button>
+                       <div>
+                        <button type="button" class="btn btn-success ml-5"><a href="{{route('show')}}">Show</a></button>
+                       </div>
                     </div>
                 </div>
             </div>

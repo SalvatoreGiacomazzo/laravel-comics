@@ -14,7 +14,9 @@
                         <h5 class="card-title">{{$secondStagePokemon['name']}}</h5>
                         <p class="card-text">{{$secondStagePokemon['typing']}}</p>
                         <small class="card-text">{{$secondStagePokemon['region']}}</small>
-                        <button type="button" class="btn btn-success"><a href="{{route('show')}}">Show</a></button>
+                        <div>
+                        <button type="button" class="btn btn-success ml-5"><a href="{{route('show')}}">Show</a></button>
+                        </div>
                     </div>
                 </div>
             </div>

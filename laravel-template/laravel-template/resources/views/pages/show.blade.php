@@ -14,7 +14,9 @@
                         <h5 class="card-title">aaa</h5>
                         <p class="card-text">aaa</p>
                         <small class="card-text">aa</small>
-                        <button type="button" class="btn btn-success"><a href="{{route('/')}}">Go Back</a></button>
+                        <div>
+                        <button type="button" class="btn btn-success ml-5"><a href="{{route('/')}}">Go Back</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
