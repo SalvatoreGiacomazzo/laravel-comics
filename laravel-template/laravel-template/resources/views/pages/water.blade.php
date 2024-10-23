@@ -1,7 +1,6 @@
 @extends('pages.layout')
 @vite('resources/js/app.js')
 
-
 @section('main-content')
 <div class="content">
     <div class="container p-5">
@@ -27,5 +26,3 @@
 </div>
 
 @endsection
-
-

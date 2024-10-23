@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'allPokemon' => [
+    "allPokemon" => [
 
         [
             'name' =>  'Bulbasaur',

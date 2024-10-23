@@ -15,9 +15,10 @@
 
     <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand text-warning" href="{{route('/')}}">Primo Stadio</a>
-          <a class="navbar-brand text-warning" href="{{ route('page2') }}">Secondo Stadio</a>
-          <a class="navbar-brand text-warning" href="{{ route('page3') }}">Terzo Stadio</a>
+            <a class="navbar-brand text-warning" href="{{route('/')}}">Home</a>
+         <a class="navbar-brand text-warning" href="{{route('grass')}}">Grass</a>
+          <a class="navbar-brand text-warning" href="{{ route('fire') }}">Fire</a>
+          <a class="navbar-brand text-warning" href="{{ route('water') }}">Water</a>
         </div>
 
     </nav>
