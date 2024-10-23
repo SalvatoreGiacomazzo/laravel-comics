@@ -327,3 +327,8 @@ Route::get('/page3', function () {
 
 
 //Creating a Show
+
+Route::get('/show', function () {
+
+    return view('pages.show');
+})->name('show');
